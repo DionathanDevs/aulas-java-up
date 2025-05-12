@@ -1,0 +1,8 @@
+// Construtor mesmo nome da classe identico
+// Setters - public void setNome
+// Getters - public (oq eu quero trazer de volta, no caso string) String getNome(){}
+// preciso criar meu construtor, definir meus parametros igual a lampada, potencia, estado nem tudo precisa vir de parametro, pode ser que exista um parametro fixo.
+//exemplo criar a lampada desligada.
+// um setter e um gett para cada atributo, caso no futuro vc queira alterar ou recuperar um dado durante o programa, maior segurança pois pode colocar um if no setter antes de alterar uma senha por exemplo.
+//public privado protegido = define quem vai poder ver os setters getters e metodos  
+//pedir um exemplo de validação  

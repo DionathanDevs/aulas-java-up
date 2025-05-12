@@ -1,0 +1,42 @@
+
+
+class Main {
+    public static void main(String[] args) {
+        
+        contaCorrente p1 = new contaCorrente();
+        
+        p1.numConta = 32;
+        p1.nome = "Dionathan";
+        
+        p1.deposito(30);
+        p1.saque(25);
+        p1.saque(25);
+        
+    }
+}
+
+class contaCorrente{
+    
+    int numConta;
+    String nome;
+    double saldo = 0;
+    
+    
+    
+    public void saque(float valorSaque){
+        if(this.saldo < valorSaque){
+            System.out.println("Sem saldo disponivel");
+        }else{
+            this.saldo -= valorSaque;
+            System.out.println("Nome: " + this.nome);
+            System.out.println("Saldo: " + this.saldo);
+        }
+    }
+    
+    public void deposito(float valorDeposito){
+        this.saldo += valorDeposito;
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Saldo: " + this.saldo);
+    }
+    
+}
